@@ -1,0 +1,134 @@
+@import "../common/css/public.less";
+.adminD{
+	overflow: hidden;
+	.logo{
+		text-align: center;
+		padding: 50px 0 20px;
+	}
+	&.adminD1{
+		background: url(images/img1.jpeg);
+		background-size: 100% auto;
+	}
+	&.adminD2{
+		background: url(images/img2.jpeg);
+		background-size: 140% auto;
+		background-position: top center;
+	}
+	&.adminD3{
+		background: url(images/img3.jpeg);
+		background-size: 140% auto;
+		background-position: top center;
+		min-height: 680px;
+		.main{
+			margin-top: 60px;
+		}
+	}
+	.main{
+		background: rgb(255,255,255);
+		padding: 0 60px 42px;
+		width: 300px;
+		margin: 0 auto 110px;
+	}
+	h1{
+		font-size:18px;
+		color: @black;
+		text-align: center;
+		padding: 50px 0 40px;
+		font-weight: normal;
+	}
+	.li1{
+		margin-bottom: 20px;
+	}
+	.inp{
+		border:1px solid @border-gray;
+		padding:12px;
+		font-size: 15px;
+		color: @black;
+		&.err{
+			border-color: @red;
+		}
+	}
+	.inp1{width: 100%;}
+	.inp2{width: 120px;}
+	.inp3{width: 160px;margin-right: 20px;}
+	//验证码
+	.yzmD{
+		img{vertical-align: middle;margin: 0 20px;}
+		a{color: @black;font-size: 15px;}
+		.a1{
+			width: 112px;
+			text-align: right;
+			display: inline-block;
+			letter-spacing: 3px;
+		}
+	}
+	.agree{
+		margin-top: 10px;
+		font-size: 13px;
+		line-height: 20px;
+		a{color: @black;}
+		input{
+			visibility: hidden;
+			width: 0;
+			&:checked + label{
+				background-position:left bottom;
+			}
+		}
+		label{background: url(images/checkbox.png) no-repeat left top;height: 20px;padding-left: 30px;display: block;}
+
+	}
+	.sub_btn{.boxK;width: 100%;text-align: center;background: @black;color:#FFF;font-size: 18px;line-height: 40px;margin-top: 40px;}
+	//忘记密码
+	.other{
+		text-align: center;
+		margin: 40px auto;
+		a{
+			color:@black;
+			margin: 0 25px;
+			font-size: 15px;
+			letter-spacing: 3px;
+		}
+	}
+	//第三方登录
+	.third_party{
+		border-top: 1px solid @border-gray;
+		text-align: center;
+		.tit{
+			color: @gray;
+			font-size: 13px;
+			margin: 24px auto 16px;
+		}
+		.shareD{
+			a{
+				background: @black;
+				display: inline-block;
+				border-radius: 50%;
+				margin:0 20px;
+				position: relative;
+				&:hover{
+					background:rgb(255,221,138);
+					.share{
+						background-position: center bottom;
+					}
+				}
+				.share{
+					display: inline-block;
+					width: 34px;
+					height: 34px;
+				}
+				.s-qqweibo{
+					background: url(/common/bottom/qqweibo.png);
+				}
+				.s-sina{
+					background: url(/common/bottom/sina.png);
+				}
+				.s-wechat{
+					background: url(/common/bottom/wechat.png);
+				}
+				.s-qq{
+					background: url(/common/bottom/qq.png);
+				}
+			}
+		}
+	}
+}

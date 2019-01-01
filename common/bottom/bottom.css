@@ -1,0 +1,220 @@
+.com-bottom {
+  background: #171717;
+  color: #6c6c6c;
+  z-index: 1;
+  position: relative;
+}
+.com-bottom a {
+  color: #6c6c6c;
+}
+.com-bottom .w {
+  padding-top: 70px;
+  padding-bottom: 140px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  background: #171717;
+}
+.com-bottom .bottom-left h4 {
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+.com-bottom .bottom-left a {
+  display: block;
+  font-size: 13px;
+  line-height: 2;
+}
+.com-bottom .bottom-left a:hover {
+  text-decoration: underline;
+}
+.com-bottom .bottom-left li {
+  display: inline-block;
+  float: left;
+  margin-right: 50px;
+}
+.com-bottom .bottom-right {
+  text-align: right;
+}
+.com-bottom .bottom-right .shareD {
+  margin-bottom: 30px;
+}
+.com-bottom .bottom-right .shareD a {
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 20px;
+  position: relative;
+  width: 34px;
+  height: 34px;
+}
+.com-bottom .bottom-right .shareD a:hover {
+  background: #ffdd8a;
+}
+.com-bottom .bottom-right .shareD a:hover .share {
+  background-position: center bottom;
+}
+.com-bottom .bottom-right .shareD a:hover .QR {
+  display: block;
+}
+.com-bottom .bottom-right .shareD a .share {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+}
+.com-bottom .bottom-right .shareD a .QR {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  margin-left: -55px;
+  background: #ffffff;
+  /* padding: 16px; */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+.com-bottom .bottom-right .shareD a .QR img {
+  width: 100px;
+  height: 100px;
+}
+.com-bottom .bottom-right .shareD a .QR:after {
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-style: solid;
+  overflow: hidden;
+}
+.com-bottom .bottom-right .shareD a .s-qqweibo {
+  background: url(qqweibo.png);
+}
+.com-bottom .bottom-right .shareD a .s-sina {
+  background: url(sina.png);
+}
+.com-bottom .bottom-right .shareD a .s-wechat {
+  background: url(wechat.png);
+}
+.com-bottom .bottom-right .shareD a .s-qq {
+  background: url(qq.png);
+}
+.com-bottom .bottom-right .shareD a.logo {
+  background: none;
+  border-radius: 0;
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+}
+.com-bottom .bottom-right .shareD a.logo:hover {
+  background: none;
+}
+.com-bottom .bottom-right .shareD a.logo img {
+  width: 101px;
+  height: 60px;
+}
+.com-bottom .bottom-right p {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.com-bottom .bottom-right p span {
+  margin-left: 20px;
+}
+.gotopD {
+  position: fixed;
+  right: 30px;
+  bottom: 10%;
+  z-index: 1;
+}
+.gotopD .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1px;
+  background-color: #171717;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  cursor: pointer;
+  background-position: center top;
+  position: relative;
+}
+.gotopD .icon.gotop {
+  background-image: url("../images/br_up.png");
+}
+.gotopD .icon.wechat:hover,
+.gotopD .icon.wechat2:hover {
+  background-position: center bottom;
+}
+.gotopD .icon.wechat {
+  background-image: url("../images/wechat1.png");
+}
+.gotopD .icon.wechat2 {
+  background-image: url("../images/wechat2.png");
+}
+.gotopD .icon .showI {
+  display: none;
+  position: absolute;
+  right: 100%;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin-right: 6px;
+  background: #FFF;
+  top: 50%;
+  margin-top: -55px;
+}
+.gotopD .icon .showI img {
+  width: 100%;
+  height: 100%;
+}
+.gotopD .icon .showI:after {
+  border-color: transparent transparent transparent #ffffff;
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-style: solid;
+  overflow: hidden;
+  right: -12px;
+  left: auto;
+  top: 50%;
+  margin-top: -6px;
+}
+.gotopD .icon:hover .showI {
+  display: block;
+}
+.com-bottom .bottom-right .shareD a .d1,.gotopD .icon .showI .d1{
+  display: none;
+}
+.com-bottom .bottom-right .shareD a:hover .d1{
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  width: 100px;
+  left: 50%;
+  text-align: center;
+  margin-left: -50px;
+  top: -28px;
+}
+.gotopD .icon .showI .d1{
+  display: block;
+  position: absolute;
+  color: #6c6c6c;
+  text-align: center;
+  width: 100%;
+  margin-left: -5px;
+  font-size: 13px;
+  line-height: 2.5;
+}

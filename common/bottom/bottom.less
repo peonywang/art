@@ -1,0 +1,167 @@
+@import "../css/public.less";
+.com-bottom{
+	background: @black;
+	color: rgb(108,108,108);
+	a{color: rgb(108,108,108);}
+	z-index: 1;
+	position: relative;
+	.w{
+		padding-top: 70px;
+		padding-bottom: 140px;
+		.flex;
+		.justify-content(space-between);
+		background: @black;
+	}
+	.bottom-left{
+		h4{
+			color:rgb(255,255,255);
+			font-size: 15px;
+			margin-bottom: 30px;
+			font-weight: normal;
+		}
+		a{
+			display: block;
+			font-size: 13px;
+			line-height: 2;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+		li{
+			display: inline-block;
+			float: left;
+			margin-right: 50px;
+		}
+	}
+	.bottom-right{
+		text-align: right;
+		.shareD{
+			margin-bottom: 30px;
+			a{
+				background: rgba(255,255,255,.2);
+				display: inline-block;
+				border-radius: 50%;
+				margin-left: 20px;
+				position: relative;
+				width: 34px;
+				height: 34px;
+				&:hover{
+					background:rgb(255,221,138);
+					.share{
+						background-position: center bottom;
+					}
+					.QR{
+						display: block;
+					}
+				}
+				.share{
+					display: inline-block;
+					width: 34px;
+					height: 34px;
+				}
+				.QR{
+					display: none;
+					position: absolute;
+					bottom:60px;
+					left:50%;
+					margin-left: -(70+16*2)/2px;
+					background: rgb(255,255,255);
+					padding: 16px;
+					img{
+						width: 70px;
+						height: 70px;
+					}
+					&:after{
+						.sanjiao(bottom,6px,#FFF);
+					}
+				}
+				.s-qqweibo{
+					background: url(qqweibo.png);
+				}
+				.s-sina{
+					background: url(sina.png);
+				}
+				.s-wechat{
+					background: url(wechat.png);
+				}
+				.s-qq{
+					background: url(qq.png);
+				}
+				&.logo{
+					background: none;
+					border-radius: 0;
+					vertical-align:middle;
+					width: auto;
+					height: auto;
+					&:hover{
+						background: none;
+					}
+					img{
+						width: 101px;
+						height: 60px;
+					}
+				}
+			}
+		}
+		p{
+			font-size: 14px;
+			text-transform:uppercase;
+			line-height: 1.5;
+			span{
+				margin-left: 20px;
+			}
+		}
+	}
+}
+.gotopD{
+	position: fixed;
+	right: 30px;
+	bottom: 10%;
+	z-index: 1;
+	.icon{
+		width: 60px;
+		height: 60px;
+		margin-bottom: 1px;
+		background-color: @black;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		cursor: pointer;
+		background-position: center top;
+		position: relative;
+		&.gotop{background-image: url("../images/br_up.png"); }
+		&.wechat,&.wechat2{&:hover{background-position: center bottom; } } 
+		&.wechat{background-image: url("../images/wechat1.png"); }
+		&.wechat2{
+			background-image: url("../images/wechat2.png");
+		}
+		.showI{
+			display: none;
+			position: absolute;
+			right: 100%;
+			width: 100px;
+			height: 100px;
+			padding:5px;
+			margin-right: 6px;
+			background: #FFF;
+			top:50%;
+			margin-top: -55px;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+			&:after{
+				.sanjiao(left,6px,#FFF);
+				right: -12px;
+				left: auto;
+				top:50%;
+				margin-top: -6px;
+			}
+		}
+		&:hover{
+			.showI{
+				display: block;
+			}
+		}
+	}
+}

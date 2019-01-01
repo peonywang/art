@@ -1,0 +1,53 @@
+.swiper-worksD .gallery-top{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+.swiper-worksD .gallery-thumbs{
+	margin-top: -100px;
+	overflow: hidden;
+}
+.swiper-worksD .gallery-thumbs .swiper-slide{
+	border: 1px solid rgba(0, 0, 0, .5);
+	box-sizing: border-box;
+}
+.swiper-worksD .gallery-top .swiper-slide{
+	overflow: hidden;
+}
+.eduD.intnrD .swiper-worksD .gallery-top .swiper-slide p{
+	margin-top: -30px;
+	color: #000;
+}
+.eduD.intnrD p{
+	text-indent: 2em;
+}
+.eduD.intnrD p.p1{
+	text-indent: 0;
+}
+.eduD.intnrD .worksD li p{
+	text-indent: 0;
+}
+.eduD.intnrD .tab1 td{
+	font-weight: normal;
+}
+.eduD.intnrD .tab1 .s1{
+	font-weight: bolder;
+	font-size: 14px;
+	height: 1.2em;
+}
+.eduD.intnrD .tab1 .s2:before{
+	content: "：";
+	margin-right: 0;
+}
+
+/*详情页简介*/
+.eduD.intnrD .tab1_1{
+	width:100%;
+	overflow:hidden;
+	font-size:14px;
+}
+.eduD.intnrD .tab1_1 li{
+	width:50%;
+	float:left;
+	margin-bottom: 0.7em;
+}

@@ -1,0 +1,51 @@
+.edit_main .edit_right .e_r_nr .xc .ul1 .imgD{position: relative; }
+.edit_main .edit_right .e_r_nr .xc .ul1 .imgD .del{
+	position: absolute;
+	right: 18px;
+	top: -6px;
+	display: none;
+}
+.edit_main .edit_right .e_r_nr .xc .ul1 .imgD:hover .del{display: block}
+
+/* 裁切 */
+.edit_main .edit_right .e_r_nr .gs{
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.edit_main .edit_right .e_r_nr .gs .gs2{
+	margin-bottom: 60px;
+	background: #eaeaea;
+	height: 300px;
+	position: relative;
+}
+.edit_main .edit_right .e_r_nr .gs .gs2 .butD{
+	position: absolute;
+	top: 100%;
+	right: 0;
+	margin-top: 20px;
+}
+.edit_main .edit_right .e_r_nr .gs .gs3{
+	-webkit-flex: unset;
+	flex: unset;
+	width: 100%;
+	margin-top: 20px;
+}
+#gsImg{
+	text-align: center;
+	height: 300px;
+	line-height: 300px;
+	width: 520px;
+	overflow: hidden;
+	background: #eaeaea;
+}
+#gsImg img{
+	vertical-align: middle;
+	height: 100%;
+}
+.jcrop-holder{
+	margin: 0 auto;
+	height: 100%;
+}
+.tan{
+	z-index: 999;
+}

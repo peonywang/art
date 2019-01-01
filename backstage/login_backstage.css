@@ -1,0 +1,56 @@
+.mainD{
+	background: url('images/login_bg.jpg') no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+
+}
+.main{
+	display: flex;
+}
+.main .m_right{
+	background: #FFF;
+	width: 420px;
+}
+.main .m_right ul{
+	padding: 30px 60px 0;
+}
+.main .m_right .inp{
+	border: none;
+	border-bottom: 1px solid #dddddd;
+	width: 100%;
+	line-height: 3;
+	margin-top: 15px;
+}
+.main .m_right .yzmD{
+	margin-bottom: 10px;
+}
+.main .m_right .yzmD .inp{
+	width: 175px;
+}
+.main .m_right .yzmD .img{
+	vertical-align: bottom;
+	width: 70px;
+	height: 40px;
+}
+.main .m_right .yzmD a{
+	font-size: 14px;
+}
+.main .m_right .sub_btn{
+	width: 100%;
+	box-sizing: border-box;
+	color: #ffdd8a;
+	margin-top: 20px;
+}
+.bottom_text{
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	color: #565656;
+	font-size: 13px;
+	bottom: 60px;
+}

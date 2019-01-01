@@ -1,0 +1,137 @@
+@import "../css/public.less";
+.com-top{
+	.top1{
+		background: @black1;
+		.w{
+			background: @black1; 
+			padding-top:10px;
+			padding-bottom:10px;
+		}
+	}
+	.top2{
+		background: @black;
+		border-bottom: 1px solid @yellow;
+		.w{background: @black;}
+	}
+	.top1,.top2{
+		.w{	
+			.flex;
+			.justify-content(space-between);
+			.align-items(center);
+		}
+	}
+	.logo{
+		img{
+			height: 25px;
+		}
+	}
+	.top1-right{
+		line-height: 32px;
+		a{
+			color:#FFF;
+			font-size: 13px;
+			position: relative;
+			display:inline-block;
+		}
+		img{
+			vertical-align: middle;
+			margin-left:32px;
+			width: 32px;
+			height: 32px;
+		}
+		.news{
+			background: @red;
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			top:5px;
+			right:4px;
+			border-radius:50%;
+		}
+	}
+	.nav{
+		a{
+			color: #FFF;
+			font-size: 14px;
+			padding: 30px 20px 26px;
+			position: relative;
+			display:inline-block;
+			& + a{
+				background:url(../images/ge.png) no-repeat left center;
+				background-size: 1px 10px;
+			}
+			&:hover,&.act{
+				&:after{
+					.sanjiao(top,6px,@yellow);
+					bottom:0;
+				}
+			}
+		}
+	}
+	.search{
+		border:1px solid rgba(255,255,255,.1);
+		padding:5px 0 5px 5px;
+		input,img,button{vertical-align: middle;}
+		input{
+			background: none;
+			border:none;
+			outline: none;
+		}
+		button{
+			padding:0 10px;
+			background: url(../images/ge.png) no-repeat left center;
+			background-size: 1px 20px;
+		}
+	}
+	//首页头部
+	.top_home.top2{
+		.w{
+			.justify-content(center);
+		}
+		.logo{
+			position: absolute;
+			left:30px;
+			top:30px;
+		}
+		.top1-right{
+			position: absolute;;
+			right:30px;
+			top:24px;
+		}
+	}
+	.userinforD{
+		display: inline-block;
+		position: relative;
+		.userinfor{
+			display: none;
+			position: absolute ;
+			z-index:2;
+			background: #FFF;
+			padding:30px;
+			right: 0;
+			margin-top: 1px;
+			a{
+				color:@black;
+				min-width: 100px;
+				border-bottom: 1px solid @border-gray;
+				line-height: 50px;
+				.mess{
+					display: inline-block;
+					background: @red;
+					color:#FFF;
+					float: right;
+					height: 15px;
+					line-height: 15px;
+					text-align: center;
+					min-width: 15px;
+					border-radius: 8px;
+					font-style: normal;
+					margin-top: 15px;
+				}
+			}
+		}
+		&:hover{
+			.userinfor{display: block;}
+		}
+	}
+}

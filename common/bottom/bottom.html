@@ -1,0 +1,85 @@
+<link rel="stylesheet" type="text/css" href="/common/bottom/bottom.css">
+<div class="com-bottom">
+	<div class="w">
+		<ul class="bottom-left">
+			<li>
+				<h4>专业服务</h4>
+				<a href="">美术百科数据平台</a>
+				<a href="/download.php">高清艺术素材</a>
+				<a href="">原创艺术 / 复制品</a>
+				<a href="">其他专业服务</a>
+			</li>
+			<li>
+				<h4>购买商品</h4>
+				<a href="">购买流程</a>
+				<a href="">物流配送</a>
+				<a href="">支付方式</a>
+			</li>
+			<li>
+				<h4>合作与支持</h4>
+				<a href="">业务合作</a>
+				<a href="">常见问题</a>
+				<a href="">投诉与建议</a>
+				<a href="">版权声明</a>
+			</li>
+			<li>
+				<h4>了解我们</h4>
+				<a href="">关于我们</a>
+				<a href="">工作机会</a>
+				<a href="">意见反馈</a>
+			</li>
+		</ul>
+		<div class="bottom-right">
+			<div class="shareD">
+				<a href="" alt="腾讯微博"><i class="share s-qqweibo"></i></a>
+				<a href="" alt="微博"><i class="share s-sina"></i></a>
+				<a href="" alt="微信">
+					<i class="share s-wechat"></i>
+					<span class="QR"><img src="/common/bottom/wechat-QR.png"></span>
+					<div class="d1">美术百科网客服</div>
+				</a>
+				<a href="" alt="QQ"><i class="share s-qq"></i></a>
+				<a class="logo" href="/index.php"><img src="/common/images/logo2.png" alt="logo"></a>
+			</div>
+			<p>
+				<span>京ICP备16003461号</span>
+				<span>Copyright</span>
+				<span>2017-2019</span>
+			</p>
+			<p>
+				<span>ARTBK.CC版权所有</span>
+			</p>
+			<p>
+				<a href="">隐私政策</a>
+				&nbsp;
+				<a href="">使用者协议</a>
+			</p>
+		</div>
+	</div>
+</div>
+<div class="gotopD" id="gotopD" style="display: none;">
+	<div class="icon wechat"></div>
+	<div class="icon wechat2">
+		<div class="showI">
+			<img src="/common/bottom/wechat-QR.png">
+			<div class="d1">官方公众号</div>
+		</div>
+	</div>
+	<div class="icon gotop"></div>
+</div>
+<script>
+	$(function(){
+		// go top
+		var windowH = $(window).height();
+		$(window).scroll(function(){
+			if($(this).scrollTop() > windowH){
+				$('#gotopD').fadeIn();
+			}else{
+				$('#gotopD').fadeOut();
+			}
+		});
+		$(".gotopD .gotop").click(function() {
+			$("html,body").animate({scrollTop:0}, 300);
+		});
+	})
+</script>

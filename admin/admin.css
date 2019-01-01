@@ -1,0 +1,156 @@
+.adminD {
+  overflow: hidden;
+}
+.adminD .logo {
+  text-align: center;
+  padding: 50px 0 20px;
+}
+.adminD.adminD1 {
+  background: url(images/img1.jpeg);
+  background-size: 100% auto;
+}
+.adminD.adminD2 {
+  background: url(images/img2.jpeg);
+  background-size: 140% auto;
+  background-position: top center;
+}
+.adminD.adminD3 {
+  background: url(images/img3.jpeg);
+  background-size: 140% auto;
+  background-position: top center;
+  min-height: 680px;
+}
+.adminD.adminD3 .main {
+  margin-top: 60px;
+}
+.adminD .main {
+  background: #ffffff;
+  padding: 0 60px 42px;
+  width: 300px;
+  margin: 0 auto 110px;
+}
+.adminD h1 {
+  font-size: 18px;
+  color: #171717;
+  text-align: center;
+  padding: 50px 0 40px;
+  font-weight: normal;
+}
+.adminD .li1 {
+  margin-bottom: 20px;
+}
+.adminD .inp {
+  border: 1px solid #e9e9e9;
+  padding: 12px;
+  font-size: 15px;
+  color: #171717;
+}
+.adminD .inp.err {
+  border-color: #da1c28;
+}
+.adminD .inp1 {
+  width: 100%;
+}
+.adminD .inp2 {
+  width: 120px;
+}
+.adminD .inp3 {
+  width: 160px;
+  margin-right: 20px;
+}
+.adminD .yzmD img {
+  vertical-align: middle;
+  margin: 0 20px;
+}
+.adminD .yzmD a {
+  color: #171717;
+  font-size: 15px;
+}
+.adminD .yzmD .a1 {
+  width: 112px;
+  text-align: right;
+  display: inline-block;
+  letter-spacing: 3px;
+}
+.adminD .agree {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.adminD .agree a {
+  color: #171717;
+}
+.adminD .agree input {
+  visibility: hidden;
+  width: 0;
+}
+.adminD .agree input:checked + label {
+  background-position: left bottom;
+}
+.adminD .agree label {
+  background: url(images/checkbox.png) no-repeat left top;
+  height: 20px;
+  padding-left: 30px;
+  display: block;
+}
+.adminD .sub_btn {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  background: #171717;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 40px;
+  margin-top: 40px;
+}
+.adminD .other {
+  text-align: center;
+  margin: 40px auto;
+}
+.adminD .other a {
+  color: #171717;
+  margin: 0 25px;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+.adminD .third_party {
+  border-top: 1px solid #e9e9e9;
+  text-align: center;
+}
+.adminD .third_party .tit {
+  color: #8f909b;
+  font-size: 13px;
+  margin: 24px auto 16px;
+}
+.adminD .third_party .shareD a {
+  background: #171717;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 20px;
+  position: relative;
+}
+.adminD .third_party .shareD a:hover {
+  background: #ffdd8a;
+}
+.adminD .third_party .shareD a:hover .share {
+  background-position: center bottom;
+}
+.adminD .third_party .shareD a .share {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+}
+.adminD .third_party .shareD a .s-qqweibo {
+  background: url(/common/bottom/qqweibo.png);
+}
+.adminD .third_party .shareD a .s-sina {
+  background: url(/common/bottom/sina.png);
+}
+.adminD .third_party .shareD a .s-wechat {
+  background: url(/common/bottom/wechat.png);
+}
+.adminD .third_party .shareD a .s-qq {
+  background: url(/common/bottom/qq.png);
+}

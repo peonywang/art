@@ -1,0 +1,113 @@
+@import "public";
+*{padding:0;margin:0;}
+body{font-family:"PingFang SC","微软雅黑";background:@mainbg;color:@black;}
+li{list-style:none;}
+a img{border:none;}
+input[type="button"]{cursor:pointer;}
+a{text-decoration:none;cursor: pointer;color:@black;}
+a:focus{outline:none;}
+button{border:none;cursor:pointer;}
+a,input,button{outline: none;}
+.an{cursor:pointer;display: inline-block; background: @black; color: #FFF; padding:0 3.5em; text-align: center; line-height: 36px; font-size: 15px;white-space: nowrap;& + .an{margin-left: 30px;}}
+.an2{color:@yellow;}
+.clearfix:before,
+.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;/*IE/7/6*/}
+.boxK{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.w{margin:0 auto;width:1200px;padding: 0 20px;.boxK;}
+.left{float:left;}
+.right{float:right;}
+.cent{text-align:center;}
+.bgcol{background:rgb(23,23,23);}
+.textback{color:rgb(23,23,23);}
+.textgray{color:rgb(143,144,155);}
+.gray{color:rgb(143,144,155);}
+.red{color:@red;}
+.yellow{color:@yellow;}
+.green{color:@green;}
+.black{color:@black;}
+.font13{font-size: 13px;}
+.font15{font-size: 15px;}
+.font30{font-size: 30px;}
+.img100{width: 100%;}
+
+//多选
+.check{
+	cursor: pointer;
+	input[type="checkbox"],input[type="radio"]{
+	  width: 0;
+	  visibility: hidden;
+	}
+	span{
+	  padding-left: 30px;
+	  height: 20px;
+	  line-height: 20px;
+	  display: inline-block;
+	}
+	input[type="checkbox"]+span{background: url(../images/check.png) no-repeat left top;}
+	input[type="radio"]+span{background: url(../images/radio.png) no-repeat left top;}
+	input:checked + span{
+	  background-position: left bottom;
+	}
+}
+//单选
+.tan{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 11;
+	background:rgba(0,0,0,.6);
+	.flex;
+	.justify-content(center);
+	.align-items(center);
+	.tan_main{
+		background: #FFF;
+		min-width: 680px;
+		.boxK;
+		text-align: center;
+		padding:60px 50px 90px;
+	}
+	.tan_tit{
+		font-size: 24px;
+		margin-bottom: 50px;
+	}
+	.tan_nr{
+		font-size: 13px;
+		color:@gray;
+		line-height: 2;
+		margin-bottom: 40px;
+	}
+	.anD{
+		margin-bottom: 20px;
+	}
+	.a1{
+		color:@black;
+		font-size: 15px;
+	}
+	.marg{
+		& + .marg{
+			margin-left: 3em;
+		}
+	}
+	// 二维码图片
+	.erwei{
+		width: 180px;
+		height: 180px;
+		margin-bottom: 30px;
+		& + .erwei{
+			margin-left: 60px;
+		}
+	}
+	// 备注说明
+	.dis{
+		font-size: 13px;
+		color:@gray;
+		line-height: 2;
+	}
+	.font15{
+		font-size: 15px;
+	}
+}

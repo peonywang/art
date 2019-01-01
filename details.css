@@ -1,0 +1,12 @@
+.zoomImgD .small{
+	max-height: 700px;
+	width: auto;
+	max-width: 90%;
+}
+.zoomImgD .zoomBig .imgD{
+	background-size: contain;
+	width: 98%;
+	height: 98%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
